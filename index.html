@@ -215,17 +215,21 @@
       </p>
 
       <!-- Mockup Retina HD -->
-      <div class="mt-6 sm:mt-8 w-full max-w-sm sm:max-w-2xl relative overflow-hidden rounded-2xl" style="contain: layout paint;">
-        <img src="hero-mockup-fr.jpg" 
-            alt="Mockup Officiel +150 Entraînements Football & Musculation Méthode FUTFORCE" 
-            class="w-full h-auto drop-shadow-2xl rounded-2xl mx-auto transform hover:scale-[1.02] transition-transform duration-300"
-            loading="eager"
-            fetchpriority="high"
-            decoding="async"
-            width="1024"
-            height="682"
-            style="width: 100%; height: auto;"
-          />
+      <div class="mt-6 sm:mt-8 w-full max-w-sm sm:max-w-2xl relative overflow-hidden rounded-2xl" style="contain: layout paint; aspect-ratio: 1024/682;">
+        <picture>
+          <source media="(max-width: 640px)" srcset="hero-mockup-fr-mobile.webp" type="image/webp" />
+          <source media="(min-width: 641px)" srcset="hero-mockup-fr.webp" type="image/webp" />
+          <img src="hero-mockup-fr.webp" 
+              alt="Mockup Officiel +150 Entraînements Football & Musculation Méthode FUTFORCE" 
+              class="w-full h-auto drop-shadow-2xl rounded-2xl mx-auto transform hover:scale-[1.02] transition-transform duration-300"
+              loading="eager"
+              fetchpriority="high"
+              decoding="async"
+              width="1024"
+              height="682"
+              style="width: 100%; height: auto; aspect-ratio: 1024/682;"
+            />
+        </picture>
       </div>
 
       <!-- Bouton CTA Principal -->
@@ -338,36 +342,66 @@
       <div class="animate-scroll gap-3 sm:gap-4 py-2">
         <!-- Boucle 1 -->
         <div class="w-[200px] sm:w-[280px] shrink-0 rounded-2xl overflow-hidden border-2 border-sport-border shadow-md bg-white" style="aspect-ratio: 585/1024; contain: layout paint;">
-          <img src="ficha-01-fr.webp" srcset="ficha-01-fr-mobile.webp 400w, ficha-01-fr.webp 585w" sizes="(max-width: 640px) 200px, 280px" alt="01. Force Globale du Footballeur - Fiche d'Entraînement FUTFORCE" class="w-full h-auto block" loading="lazy" decoding="async" width="585" height="1024" style="aspect-ratio: 585/1024;" />
+          <picture>
+            <source media="(max-width: 640px)" srcset="ficha-01-fr-mobile.webp" type="image/webp" />
+            <img src="ficha-01-fr.webp" alt="01. Force Globale du Footballeur - Fiche d'Entraînement FUTFORCE" class="w-full h-auto block" loading="lazy" decoding="async" width="585" height="1024" style="aspect-ratio: 585/1024;" />
+          </picture>
         </div>
         <div class="w-[200px] sm:w-[280px] shrink-0 rounded-2xl overflow-hidden border-2 border-sport-border shadow-md bg-white" style="aspect-ratio: 585/1024; contain: layout paint;">
-          <img src="ficha-02-fr.webp" srcset="ficha-02-fr-mobile.webp 400w, ficha-02-fr.webp 585w" sizes="(max-width: 640px) 200px, 280px" alt="02. Des Jambes Fortes pour Gagner les Duels - Fiche d'Entraînement FUTFORCE" class="w-full h-auto block" loading="lazy" decoding="async" width="585" height="1024" style="aspect-ratio: 585/1024;" />
+          <picture>
+            <source media="(max-width: 640px)" srcset="ficha-02-fr-mobile.webp" type="image/webp" />
+            <img src="ficha-02-fr.webp" alt="02. Des Jambes Fortes pour Gagner les Duels - Fiche d'Entraînement FUTFORCE" class="w-full h-auto block" loading="lazy" decoding="async" width="585" height="1024" style="aspect-ratio: 585/1024;" />
+          </picture>
         </div>
         <div class="w-[200px] sm:w-[280px] shrink-0 rounded-2xl overflow-hidden border-2 border-sport-border shadow-md bg-white" style="aspect-ratio: 585/1024; contain: layout paint;">
-          <img src="ficha-03-fr.webp" srcset="ficha-03-fr-mobile.webp 400w, ficha-03-fr.webp 585w" sizes="(max-width: 640px) 200px, 280px" alt="03. Force Unilatérale pour l'Accélération - Fiche d'Entraînement FUTFORCE" class="w-full h-auto block" loading="lazy" decoding="async" width="585" height="1024" style="aspect-ratio: 585/1024;" />
+          <picture>
+            <source media="(max-width: 640px)" srcset="ficha-03-fr-mobile.webp" type="image/webp" />
+            <img src="ficha-03-fr.webp" alt="03. Force Unilatérale pour l'Accélération - Fiche d'Entraînement FUTFORCE" class="w-full h-auto block" loading="lazy" decoding="async" width="585" height="1024" style="aspect-ratio: 585/1024;" />
+          </picture>
         </div>
         <div class="w-[200px] sm:w-[280px] shrink-0 rounded-2xl overflow-hidden border-2 border-sport-border shadow-md bg-white" style="aspect-ratio: 585/1024; contain: layout paint;">
-          <img src="ficha-04-fr.webp" srcset="ficha-04-fr-mobile.webp 400w, ficha-04-fr.webp 585w" sizes="(max-width: 640px) 200px, 280px" alt="04. Force Fonctionnelle au Poids du Corps - Fiche d'Entraînement FUTFORCE" class="w-full h-auto block" loading="lazy" decoding="async" width="585" height="1024" style="aspect-ratio: 585/1024;" />
+          <picture>
+            <source media="(max-width: 640px)" srcset="ficha-04-fr-mobile.webp" type="image/webp" />
+            <img src="ficha-04-fr.webp" alt="04. Force Fonctionnelle au Poids du Corps - Fiche d'Entraînement FUTFORCE" class="w-full h-auto block" loading="lazy" decoding="async" width="585" height="1024" style="aspect-ratio: 585/1024;" />
+          </picture>
         </div>
         <div class="w-[200px] sm:w-[280px] shrink-0 rounded-2xl overflow-hidden border-2 border-sport-border shadow-md bg-white" style="aspect-ratio: 585/1024; contain: layout paint;">
-          <img src="ficha-05-fr.webp" srcset="ficha-05-fr-mobile.webp 400w, ficha-05-fr.webp 585w" sizes="(max-width: 640px) 200px, 280px" alt="05. Chaîne Postérieure du Footballeur - Fiche d'Entraînement FUTFORCE" class="w-full h-auto block" loading="lazy" decoding="async" width="585" height="1024" style="aspect-ratio: 585/1024;" />
+          <picture>
+            <source media="(max-width: 640px)" srcset="ficha-05-fr-mobile.webp" type="image/webp" />
+            <img src="ficha-05-fr.webp" alt="05. Chaîne Postérieure du Footballeur - Fiche d'Entraînement FUTFORCE" class="w-full h-auto block" loading="lazy" decoding="async" width="585" height="1024" style="aspect-ratio: 585/1024;" />
+          </picture>
         </div>
 
         <!-- Boucle 2 (Duplicata pour flux continu à 100%) -->
         <div class="w-[200px] sm:w-[280px] shrink-0 rounded-2xl overflow-hidden border-2 border-sport-border shadow-md bg-white" style="aspect-ratio: 585/1024; contain: layout paint;">
-          <img src="ficha-01-fr.webp" srcset="ficha-01-fr-mobile.webp 400w, ficha-01-fr.webp 585w" sizes="(max-width: 640px) 200px, 280px" alt="01. Force Globale du Footballeur - Fiche d'Entraînement FUTFORCE" class="w-full h-auto block" loading="lazy" decoding="async" width="585" height="1024" style="aspect-ratio: 585/1024;" />
+          <picture>
+            <source media="(max-width: 640px)" srcset="ficha-01-fr-mobile.webp" type="image/webp" />
+            <img src="ficha-01-fr.webp" alt="01. Force Globale du Footballeur - Fiche d'Entraînement FUTFORCE" class="w-full h-auto block" loading="lazy" decoding="async" width="585" height="1024" style="aspect-ratio: 585/1024;" />
+          </picture>
         </div>
         <div class="w-[200px] sm:w-[280px] shrink-0 rounded-2xl overflow-hidden border-2 border-sport-border shadow-md bg-white" style="aspect-ratio: 585/1024; contain: layout paint;">
-          <img src="ficha-02-fr.webp" srcset="ficha-02-fr-mobile.webp 400w, ficha-02-fr.webp 585w" sizes="(max-width: 640px) 200px, 280px" alt="02. Des Jambes Fortes pour Gagner les Duels - Fiche d'Entraînement FUTFORCE" class="w-full h-auto block" loading="lazy" decoding="async" width="585" height="1024" style="aspect-ratio: 585/1024;" />
+          <picture>
+            <source media="(max-width: 640px)" srcset="ficha-02-fr-mobile.webp" type="image/webp" />
+            <img src="ficha-02-fr.webp" alt="02. Des Jambes Fortes pour Gagner les Duels - Fiche d'Entraînement FUTFORCE" class="w-full h-auto block" loading="lazy" decoding="async" width="585" height="1024" style="aspect-ratio: 585/1024;" />
+          </picture>
         </div>
         <div class="w-[200px] sm:w-[280px] shrink-0 rounded-2xl overflow-hidden border-2 border-sport-border shadow-md bg-white" style="aspect-ratio: 585/1024; contain: layout paint;">
-          <img src="ficha-03-fr.webp" srcset="ficha-03-fr-mobile.webp 400w, ficha-03-fr.webp 585w" sizes="(max-width: 640px) 200px, 280px" alt="03. Force Unilatérale pour l'Accélération - Fiche d'Entraînement FUTFORCE" class="w-full h-auto block" loading="lazy" decoding="async" width="585" height="1024" style="aspect-ratio: 585/1024;" />
+          <picture>
+            <source media="(max-width: 640px)" srcset="ficha-03-fr-mobile.webp" type="image/webp" />
+            <img src="ficha-03-fr.webp" alt="03. Force Unilatérale pour l'Accélération - Fiche d'Entraînement FUTFORCE" class="w-full h-auto block" loading="lazy" decoding="async" width="585" height="1024" style="aspect-ratio: 585/1024;" />
+          </picture>
         </div>
         <div class="w-[200px] sm:w-[280px] shrink-0 rounded-2xl overflow-hidden border-2 border-sport-border shadow-md bg-white" style="aspect-ratio: 585/1024; contain: layout paint;">
-          <img src="ficha-04-fr.webp" srcset="ficha-04-fr-mobile.webp 400w, ficha-04-fr.webp 585w" sizes="(max-width: 640px) 200px, 280px" alt="04. Force Fonctionnelle au Poids du Corps - Fiche d'Entraînement FUTFORCE" class="w-full h-auto block" loading="lazy" decoding="async" width="585" height="1024" style="aspect-ratio: 585/1024;" />
+          <picture>
+            <source media="(max-width: 640px)" srcset="ficha-04-fr-mobile.webp" type="image/webp" />
+            <img src="ficha-04-fr.webp" alt="04. Force Fonctionnelle au Poids du Corps - Fiche d'Entraînement FUTFORCE" class="w-full h-auto block" loading="lazy" decoding="async" width="585" height="1024" style="aspect-ratio: 585/1024;" />
+          </picture>
         </div>
         <div class="w-[200px] sm:w-[280px] shrink-0 rounded-2xl overflow-hidden border-2 border-sport-border shadow-md bg-white" style="aspect-ratio: 585/1024; contain: layout paint;">
-          <img src="ficha-05-fr.webp" srcset="ficha-05-fr-mobile.webp 400w, ficha-05-fr.webp 585w" sizes="(max-width: 640px) 200px, 280px" alt="05. Chaîne Postérieure du Footballeur - Fiche d'Entraînement FUTFORCE" class="w-full h-auto block" loading="lazy" decoding="async" width="585" height="1024" style="aspect-ratio: 585/1024;" />
+          <picture>
+            <source media="(max-width: 640px)" srcset="ficha-05-fr-mobile.webp" type="image/webp" />
+            <img src="ficha-05-fr.webp" alt="05. Chaîne Postérieure du Footballeur - Fiche d'Entraînement FUTFORCE" class="w-full h-auto block" loading="lazy" decoding="async" width="585" height="1024" style="aspect-ratio: 585/1024;" />
+          </picture>
         </div>
       </div>
     </div>
@@ -409,54 +443,62 @@
         >
           <!-- Témoignage 1 -->
           <div class="w-[280px] sm:w-[320px] shrink-0 snap-center rounded-3xl overflow-hidden border-2 border-sport-border bg-white shadow-xl hover:border-black transition-all" style="aspect-ratio: 584/1024; contain: layout paint;">
-            <img src="depoimento-01-fr.webp" 
-                srcset="depoimento-01-fr-mobile.webp 380w, depoimento-01-fr.webp 584w" sizes="(max-width: 640px) 280px, 320px" 
-                alt="Antoine Martin - Témoignage Footballeur" 
-                class="w-full h-auto block"
-                loading="lazy"
-                decoding="async"
-                width="584" height="1024"
-                style="aspect-ratio: 584/1024;"
-              />
+            <picture>
+              <source media="(max-width: 640px)" srcset="depoimento-01-fr-mobile.webp" type="image/webp" />
+              <img src="depoimento-01-fr.webp" 
+                  alt="Antoine Martin - Témoignage Footballeur" 
+                  class="w-full h-auto block"
+                  loading="lazy"
+                  decoding="async"
+                  width="584" height="1024"
+                  style="aspect-ratio: 584/1024;"
+                />
+            </picture>
           </div>
 
           <!-- Témoignage 2 -->
           <div class="w-[280px] sm:w-[320px] shrink-0 snap-center rounded-3xl overflow-hidden border-2 border-sport-border bg-white shadow-xl hover:border-black transition-all" style="aspect-ratio: 584/1024; contain: layout paint;">
-            <img src="depoimento-02-fr.webp" 
-                srcset="depoimento-02-fr-mobile.webp 380w, depoimento-02-fr.webp 584w" sizes="(max-width: 640px) 280px, 320px" 
-                alt="Camille Laurent - Témoignage Footballeuse" 
-                class="w-full h-auto block"
-                loading="lazy"
-                decoding="async"
-                width="584" height="1024"
-                style="aspect-ratio: 584/1024;"
-              />
+            <picture>
+              <source media="(max-width: 640px)" srcset="depoimento-02-fr-mobile.webp" type="image/webp" />
+              <img src="depoimento-02-fr.webp" 
+                  alt="Camille Laurent - Témoignage Footballeuse" 
+                  class="w-full h-auto block"
+                  loading="lazy"
+                  decoding="async"
+                  width="584" height="1024"
+                  style="aspect-ratio: 584/1024;"
+                />
+            </picture>
           </div>
 
           <!-- Témoignage 3 -->
           <div class="w-[280px] sm:w-[320px] shrink-0 snap-center rounded-3xl overflow-hidden border-2 border-sport-border bg-white shadow-xl hover:border-black transition-all" style="aspect-ratio: 584/1024; contain: layout paint;">
-            <img src="depoimento-03-fr.webp" 
-                srcset="depoimento-03-fr-mobile.webp 380w, depoimento-03-fr.webp 584w" sizes="(max-width: 640px) 280px, 320px" 
-                alt="Nicolas Moreau - Témoignage Footballeur" 
-                class="w-full h-auto block"
-                loading="lazy"
-                decoding="async"
-                width="584" height="1024"
-                style="aspect-ratio: 584/1024;"
-              />
+            <picture>
+              <source media="(max-width: 640px)" srcset="depoimento-03-fr-mobile.webp" type="image/webp" />
+              <img src="depoimento-03-fr.webp" 
+                  alt="Nicolas Moreau - Témoignage Footballeur" 
+                  class="w-full h-auto block"
+                  loading="lazy"
+                  decoding="async"
+                  width="584" height="1024"
+                  style="aspect-ratio: 584/1024;"
+                />
+            </picture>
           </div>
 
           <!-- Témoignage 4 -->
           <div class="w-[280px] sm:w-[320px] shrink-0 snap-center rounded-3xl overflow-hidden border-2 border-sport-border bg-white shadow-xl hover:border-black transition-all" style="aspect-ratio: 584/1024; contain: layout paint;">
-            <img src="depoimento-04-fr.webp" 
-                srcset="depoimento-04-fr-mobile.webp 380w, depoimento-04-fr.webp 584w" sizes="(max-width: 640px) 280px, 320px" 
-                alt="Julien Bernard - Témoignage Footballeur" 
-                class="w-full h-auto block"
-                loading="lazy"
-                decoding="async"
-                width="584" height="1024"
-                style="aspect-ratio: 584/1024;"
-              />
+            <picture>
+              <source media="(max-width: 640px)" srcset="depoimento-04-fr-mobile.webp" type="image/webp" />
+              <img src="depoimento-04-fr.webp" 
+                  alt="Julien Bernard - Témoignage Footballeur" 
+                  class="w-full h-auto block"
+                  loading="lazy"
+                  decoding="async"
+                  width="584" height="1024"
+                  style="aspect-ratio: 584/1024;"
+                />
+            </picture>
           </div>
         </div>
 
@@ -573,8 +615,7 @@
         <div class="group h-full rounded-2xl sm:rounded-3xl border border-sport-border bg-sport-card p-3.5 sm:p-6 shadow-sm text-center flex flex-col items-center hover:border-black transition-all">
           <div class="mb-3 sm:mb-5 w-full aspect-square rounded-xl sm:rounded-2xl overflow-hidden bg-black border border-sport-border shadow-inner" style="aspect-ratio: 1/1; contain: layout paint;">
             <picture>
-              <source type="image/avif" srcset="bonus-1-fr-mobile.avif 380w, bonus-1-fr.avif 600w" sizes="(max-width: 640px) 180px, 280px" />
-              <source type="image/webp" srcset="bonus-1-fr-mobile.webp 380w, bonus-1-fr.webp 600w" sizes="(max-width: 640px) 180px, 280px" />
+              <source media="(max-width: 640px)" srcset="bonus-1-fr-mobile.webp" type="image/webp" />
               <img src="bonus-1-fr.webp" alt="Bonus 1 : Mobilité pour Athlètes - Bougez mieux. Entraînez-vous mieux." class="w-full h-full object-cover" loading="lazy" decoding="async" width="600" height="600" style="aspect-ratio: 1/1;" />
             </picture>
           </div>
@@ -587,8 +628,7 @@
         <div class="group h-full rounded-2xl sm:rounded-3xl border border-sport-border bg-sport-card p-3.5 sm:p-6 shadow-sm text-center flex flex-col items-center hover:border-black transition-all">
           <div class="mb-3 sm:mb-5 w-full aspect-square rounded-xl sm:rounded-2xl overflow-hidden bg-black border border-sport-border shadow-inner" style="aspect-ratio: 1/1; contain: layout paint;">
             <picture>
-              <source type="image/avif" srcset="bonus-2-fr-mobile.avif 380w, bonus-2-fr.avif 600w" sizes="(max-width: 640px) 180px, 280px" />
-              <source type="image/webp" srcset="bonus-2-fr-mobile.webp 380w, bonus-2-fr.webp 600w" sizes="(max-width: 640px) 180px, 280px" />
+              <source media="(max-width: 640px)" srcset="bonus-2-fr-mobile.webp" type="image/webp" />
               <img src="bonus-2-fr.webp" alt="Bonus 2 : Guide de Nutrition pour Footballeurs - L'alimentation au service du football" class="w-full h-full object-cover" loading="lazy" decoding="async" width="600" height="600" style="aspect-ratio: 1/1;" />
             </picture>
           </div>
@@ -601,8 +641,7 @@
         <div class="group h-full rounded-2xl sm:rounded-3xl border border-sport-border bg-sport-card p-3.5 sm:p-6 shadow-sm text-center flex flex-col items-center hover:border-black transition-all">
           <div class="mb-3 sm:mb-5 w-full aspect-square rounded-xl sm:rounded-2xl overflow-hidden bg-black border border-sport-border shadow-inner" style="aspect-ratio: 1/1; contain: layout paint;">
             <picture>
-              <source type="image/avif" srcset="bonus-3-fr-mobile.avif 380w, bonus-3-fr.avif 600w" sizes="(max-width: 640px) 180px, 280px" />
-              <source type="image/webp" srcset="bonus-3-fr-mobile.webp 380w, bonus-3-fr.webp 600w" sizes="(max-width: 640px) 180px, 280px" />
+              <source media="(max-width: 640px)" srcset="bonus-3-fr-mobile.webp" type="image/webp" />
               <img src="bonus-3-fr.webp" alt="Bonus 3 : Protocole de Prévention des Blessures pour Footballeurs" class="w-full h-full object-cover" loading="lazy" decoding="async" width="600" height="600" style="aspect-ratio: 1/1;" />
             </picture>
           </div>
@@ -615,8 +654,7 @@
         <div class="group h-full rounded-2xl sm:rounded-3xl border border-sport-border bg-sport-card p-3.5 sm:p-6 shadow-sm text-center flex flex-col items-center hover:border-black transition-all">
           <div class="mb-3 sm:mb-5 w-full aspect-square rounded-xl sm:rounded-2xl overflow-hidden bg-black border border-sport-border shadow-inner" style="aspect-ratio: 1/1; contain: layout paint;">
             <picture>
-              <source type="image/avif" srcset="bonus-4-fr-mobile.avif 380w, bonus-4-fr.avif 600w" sizes="(max-width: 640px) 180px, 280px" />
-              <source type="image/webp" srcset="bonus-4-fr-mobile.webp 380w, bonus-4-fr.webp 600w" sizes="(max-width: 640px) 180px, 280px" />
+              <source media="(max-width: 640px)" srcset="bonus-4-fr-mobile.webp" type="image/webp" />
               <img src="bonus-4-fr.webp" alt="Bonus 4 : Guide des Compléments Alimentaires pour Footballeurs" class="w-full h-full object-cover" loading="lazy" decoding="async" width="600" height="600" style="aspect-ratio: 1/1;" />
             </picture>
           </div>
