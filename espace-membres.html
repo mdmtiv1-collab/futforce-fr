@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>Espace Membres VIP | +162 Séances & Méthode FUTFORCE</title>
   
   <!-- Google Fonts: Archivo Black & Inter -->
@@ -104,7 +105,7 @@
         
         <nav class="hidden md:flex items-center gap-1 bg-sport-card p-1 rounded-xl border border-sport-border text-xs font-bold">
           <button onclick="switchMainView('videos')" id="nav-btn-videos" class="px-3.5 py-1.5 rounded-lg bg-sport-green text-black font-black flex items-center gap-1.5 transition-all">
-            <span>🎥</span> <span>Videos Explicativos</span>
+            <span>🎥</span> <span>Vidéos Pédagogiques</span>
           </button>
           <button onclick="switchMainView('fichas')" id="nav-btn-fichas" class="px-3.5 py-1.5 rounded-lg text-sport-gray hover:text-white flex items-center gap-1.5 transition-all">
             <span>📑</span> <span>+162 Fiches PDF</span>
@@ -160,13 +161,26 @@
       <div class="w-full bg-sport-surface border border-sport-border p-3 sm:p-4 rounded-3xl shadow-2xl flex flex-col items-center">
         
         <!-- REPRODUCTOR FORMATO 9:16 DIRECTO EN PANTALLA (YOUTUBE EMBED 100% FUNCIONAL) -->
+        <!-- AVIS INTELIGENT D'APERÇU LOCAL (SI OUVERT VIA FILE://) -->
+        <div id="local-file-notice" class="hidden w-full max-w-[360px] mb-3 p-3 rounded-2xl bg-amber-500/10 border border-amber-500/30 text-amber-200 text-xs leading-relaxed shadow-lg">
+          <div class="flex items-start gap-2">
+            <span class="text-base leading-none">💡</span>
+            <div>
+              <strong class="font-bold text-amber-300 block mb-0.5">Note Aperçu Local (file://) :</strong>
+              Lors d'une ouverture directe depuis Windows, la sécurité YouTube peut afficher l'Erreur 153 par manque d'en-tête referer. Sur votre hébergement en ligne (Hostinger) ou sur serveur web, les vidéos se lancent parfaitement ! Vous pouvez aussi cliquer sur <strong class="text-sport-green">Ouvrir sur YouTube</strong> ci-dessous.
+            </div>
+          </div>
+        </div>
+
         <div class="vertical-video-wrapper border-2 border-sport-green/50 relative group bg-black overflow-hidden shadow-2xl">
           <iframe 
             id="video-frame"
-            src="https://www.youtube-nocookie.com/embed/FI98X2Ihs4k?autoplay=0&playsinline=1&rel=0&modestbranding=1"
+            src="https://www.youtube.com/embed/sA1Mw__daCY?playsinline=1&rel=0&modestbranding=1"
             title="Lecteur Vidéo FUTFORCE"
             class="w-full h-full absolute inset-0 border-0 rounded-2xl"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            loading="lazy"
             allowfullscreen
           ></iframe>
         </div>
@@ -181,7 +195,7 @@
           </button>
           <a 
             id="btn-youtube-link"
-            href="https://www.youtube.com/watch?v=FI98X2Ihs4k"
+            href="https://www.youtube.com/shorts/sA1Mw__daCY"
             target="_blank"
             rel="noopener noreferrer"
             class="py-2.5 px-3.5 rounded-xl bg-sport-green text-black hover:bg-emerald-400 text-xs font-black flex items-center justify-center gap-1 transition-all shadow-md active:scale-95"
@@ -238,7 +252,7 @@
               </span>
             </div>
             <h1 id="lesson-title" class="font-display text-base sm:text-xl font-black text-white leading-tight">
-              1. Séance Spécifique Haut du Corps pour Football
+              1. Comment s'entraîner comme un Joueur Pro en Musculation
             </h1>
           </div>
 
@@ -284,14 +298,14 @@
               </div>
               <div class="bg-sport-card p-3 rounded-xl border border-sport-border">
                 <span class="text-[10px] text-sport-gray uppercase block font-bold">Objectif</span>
-                <span id="tech-goal" class="text-xs sm:text-sm font-black text-white truncate">Force du Buste & Duels</span>
+                <span id="tech-goal" class="text-xs sm:text-sm font-black text-white truncate">Force & Déménagement au duel</span>
               </div>
             </div>
 
             <div class="bg-sport-card p-3.5 rounded-xl border border-sport-border space-y-1.5">
               <h4 class="font-display font-black text-white text-xs sm:text-sm">💡 Consignes d'Exécution :</h4>
               <p id="tech-desc" class="text-slate-300 leading-relaxed text-xs sm:text-sm">
-                Travail complet de poussée et de tirage pour développer une masse musculaire fonctionnelle et résister aux duels épaule contre épaule.
+                Méthode professionnelle pour bâtir un haut du corps solide et impénétrable au contact sans perdre un gramme de vivacité sur le terrain.
               </p>
             </div>
           </div>
@@ -303,8 +317,8 @@
                 <span>❌</span> <span>Ce qu'il ne faut JAMAIS faire :</span>
               </h4>
               <ul id="tech-mistakes" class="list-disc list-inside space-y-1 text-slate-300">
-                <li>Ne cambrez pas le bas du dos lors des poussées.</li>
-                <li>Contrôlez la descente pour protéger les épaules.</li>
+                <li>Ne cambrez pas le bas du dos lors des mouvements de poussée.</li>
+                <li>Contrôlez la phase excentrique pour protéger vos épaules.</li>
               </ul>
             </div>
           </div>
@@ -334,7 +348,7 @@
           <div class="flex items-center gap-2">
             <span class="text-sport-green text-base">⚡</span>
             <h2 class="font-display text-xs sm:text-sm font-black text-white uppercase tracking-wider">
-              Vidéos Pédagogiques d'Entraînement
+              Vidéos Pédagogiques d'Entraînement (Shorts)
             </h2>
           </div>
           <span class="text-[11px] text-sport-gray font-bold bg-sport-card px-2 py-0.5 rounded-md border border-sport-border">
@@ -644,10 +658,10 @@
           🎁 4 BONUS EXCLUSIFS VIP INCLUS
         </span>
         <h2 class="font-display text-xl sm:text-3xl font-black text-white">
-          Manuels Officiels de <span class="text-sport-green">Haute Performance</span>
+          Guides Officiels de <span class="text-sport-green">Haute Performance</span>
         </h2>
         <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
-          Accès complet aux 4 manuels officiels : Mobilité pour Footballeurs, Nutrition Sportive, Protocole Anti-Blessures et Guide de la Supplémentation scientifique.
+          Accès immédiat aux 4 manuels officiels : Mobilité pour Footballeurs, Nutrition Sportive, Protocole Anti-Blessures et Guide de la Supplémentation.
         </p>
       </div>
     </div>
@@ -767,7 +781,7 @@
         <div class="pt-4 mt-4 border-t border-sport-border flex items-center justify-between">
           <span class="text-xs text-sport-gray font-bold">Manual PDF • 14 Páginas</span>
           <button 
-            onclick="downloadPDF('Bonus #4 : Guide des Compléments Alimentaires (14 Páginas)')"
+            onclick="downloadPDF('Bonus #4 : Guide de la Supplémentation (14 Páginas)')"
             class="px-4 py-2 rounded-xl bg-sport-green hover:bg-emerald-400 text-black font-black text-xs transition-all shadow-md active:scale-95"
           >
             📥 Télécharger Bonus #4
@@ -797,7 +811,7 @@
     </button>
     <button onclick="toggleMobileSidebar()" class="flex flex-col items-center gap-0.5 text-sport-gray font-bold text-[10px]">
       <span class="text-lg">📋</span>
-      <span>Programme</span>
+      <span>Playlist</span>
     </button>
   </nav>
 
@@ -818,400 +832,400 @@
             "id": 1,
             "moduleId": 1,
             "moduleTitle": "Module 1 : Force du Haut du Corps & Protection du Ballon",
-            "title": "1. Séance Spécifique Haut du Corps pour Football",
-            "youtubeId": "FI98X2Ihs4k",
+            "title": "1. Comment s'entraîner comme un Joueur Pro en Musculation",
+            "youtubeId": "sA1Mw__daCY",
             "videoFile": "videos/video_1.mp4",
-            "poster": "https://i.ytimg.com/vi/FI98X2Ihs4k/hqdefault.jpg",
-            "duration": "9:56 min",
+            "poster": "https://i.ytimg.com/vi/sA1Mw__daCY/hqdefault.jpg",
+            "duration": "0:55 min",
             "level": "Tous Niveaux",
             "series": "4 Séries",
             "reps": "8 - 10 reps",
             "rest": "90 sec",
-            "goal": "Force du Buste et Protection du Ballon",
-            "desc": "Travail complet de poussée et de tirage pour développer une masse musculaire fonctionnelle et résister aux duels épaule contre épaule.",
+            "goal": "Force & Déménagement au duel",
+            "desc": "Méthode professionnelle pour bâtir un haut du corps solide et impénétrable au contact sans perdre un gramme de vivacité sur le terrain.",
             "mistakes": [
-                  "Ne cambrez pas le bas du dos lors des poussées.",
-                  "Contrôlez la descente pour protéger les épaules."
+                  "Ne cambrez pas le bas du dos lors des développés.",
+                  "Contrôlez la phase excentrique pour protéger vos épaules."
             ]
       },
       {
             "id": 2,
             "moduleId": 1,
             "moduleTitle": "Module 1 : Force du Haut du Corps & Protection du Ballon",
-            "title": "2. Musculation et Explosivité en Salle – Équipe de France FFF",
-            "youtubeId": "KFGI7xAa9J0",
+            "title": "2. Footballeurs en Salle de Musculation – Exercices Clés",
+            "youtubeId": "o03Rcuw7tKI",
             "videoFile": "videos/video_2.mp4",
-            "poster": "https://i.ytimg.com/vi/KFGI7xAa9J0/hqdefault.jpg",
-            "duration": "3:59 min",
+            "poster": "https://i.ytimg.com/vi/o03Rcuw7tKI/hqdefault.jpg",
+            "duration": "0:50 min",
             "level": "Intermédiaire",
-            "series": "4 Séries",
-            "reps": "6 - 8 reps",
-            "rest": "90 sec",
-            "goal": "Gainage et Force Explosive Pro",
-            "desc": "Immersion exclusive dans la salle de musculation des Bleus à Clairefontaine : travail de puissance, d'explosivité et de stabilité globale.",
+            "series": "3 Séries",
+            "reps": "10 reps",
+            "rest": "75 sec",
+            "goal": "Puissance du tronc & Épaules",
+            "desc": "Séance en salle ciblée sur les tirages et poussées athlétiques pour résister aux charges d'épaules et protéger le ballon sous pression.",
             "mistakes": [
-                  "Ne sacrifiez pas la vitesse d'exécution pour du poids excessif.",
-                  "Gardez un alignement parfait de la colonne."
+                  "Évitez les à-coups et balancements de poids.",
+                  "Gardez les abdos gainés et les côtes rentrées."
             ]
       },
       {
             "id": 3,
             "moduleId": 1,
             "moduleTitle": "Module 1 : Force du Haut du Corps & Protection du Ballon",
-            "title": "3. Musculation Haut du Corps pour Footballeurs en Salle",
-            "youtubeId": "2ZEttSLTeSc",
+            "title": "3. 3 Exercices Indispensables au Footballeur",
+            "youtubeId": "pCjXNL5mb7w",
             "videoFile": "videos/video_3.mp4",
-            "poster": "https://i.ytimg.com/vi/2ZEttSLTeSc/hqdefault.jpg",
-            "duration": "1:27 min",
+            "poster": "https://i.ytimg.com/vi/pCjXNL5mb7w/hqdefault.jpg",
+            "duration": "0:58 min",
             "level": "Tous Niveaux",
             "series": "4 Séries",
             "reps": "8 reps",
-            "rest": "75 sec",
-            "goal": "Blindage du Torse et Robustesse",
-            "desc": "Exercices de renforcement du haut du corps ciblés pour les joueurs de football qui cherchent à s'imposer physiquement sans s'alourdir.",
+            "rest": "90 sec",
+            "goal": "Renforcement fonctionnel en salle",
+            "desc": "Les 3 mouvements polyarticulaires indispensables recommandés par les préparateurs physiques pour maximiser la puissance en match.",
             "mistakes": [
-                  "Évitez les mouvements parasites avec le cou.",
-                  "Verrouillez les abdominaux à chaque répétition."
+                  "Ne haussez pas les épaules vers les oreilles.",
+                  "Assurez une trajectoire fluide et maîtrisée."
             ]
       },
       {
             "id": 4,
             "moduleId": 1,
             "moduleTitle": "Module 1 : Force du Haut du Corps & Protection du Ballon",
-            "title": "4. Gagner de la Force et du Muscle Utile sur le Haut du Corps",
-            "youtubeId": "9WCq3IX17uU",
+            "title": "4. Travail de Force & Duels à l'Entraînement Pro",
+            "youtubeId": "hg_Ub8waPsc",
             "videoFile": "videos/video_4.mp4",
-            "poster": "https://i.ytimg.com/vi/9WCq3IX17uU/hqdefault.jpg",
-            "duration": "4:00 min",
-            "level": "Intermédiaire - Avancé",
-            "series": "3 - 4 Séries",
-            "reps": "8 - 10 reps",
-            "rest": "90 sec",
-            "goal": "Hypertrophie Fonctionnelle Football",
-            "desc": "Méthode pas à pas pour construire du muscle sec sur les épaules, le dos et les pectoraux afin d'améliorer la puissance de course et le gainage.",
+            "poster": "https://i.ytimg.com/vi/hg_Ub8waPsc/hqdefault.jpg",
+            "duration": "0:45 min",
+            "level": "Avancé",
+            "series": "3 Séries",
+            "reps": "8 reps",
+            "rest": "60 sec",
+            "goal": "Explosivité haut du corps",
+            "desc": "Circuit d'explosivité et de contact direct inspiré de l'entraînement des joueurs internationaux pour s'imposer physiquement en duel.",
             "mistakes": [
-                  "Ne balancez pas le torse pour tricher la charge.",
-                  "Travaillez sur toute l'amplitude du mouvement."
+                  "Ne relâchez jamais la posture lombaire sous tension.",
+                  "Expirez avec puissance sur la poussée."
             ]
       },
       {
             "id": 5,
             "moduleId": 2,
             "moduleTitle": "Module 2 : Pliométrie & Détente Verticale",
-            "title": "5. 10 Exercices de Pliométrie pour Joueur Explosif",
-            "youtubeId": "0A6tEnO3W3A",
+            "title": "5. 5 Exercices d'Explosivité & Pliométrie pour Footballeur",
+            "youtubeId": "2o27QYNF0eQ",
             "videoFile": "videos/video_5.mp4",
-            "poster": "https://i.ytimg.com/vi/0A6tEnO3W3A/hqdefault.jpg",
-            "duration": "6:23 min",
+            "poster": "https://i.ytimg.com/vi/2o27QYNF0eQ/hqdefault.jpg",
+            "duration": "0:52 min",
             "level": "Tous Niveaux",
             "series": "4 Séries",
-            "reps": "5 sauts maximaux",
+            "reps": "6 sauts",
             "rest": "90 sec",
-            "goal": "Détente Sèche et Réactivité",
-            "desc": "Séance pliométrique ciblée pour décoller plus haut sur les duels de la tête et améliorer la raideur élastique de la cheville.",
+            "goal": "Détente verticale & Réactivité",
+            "desc": "Routine pliométrique pour développer la vitesse de réaction des chevilles et l'impulsion verticale lors des duels aériens de la tête.",
             "mistakes": [
-                  "N'atterrissez jamais les genoux verrouillés ou rigides.",
-                  "Amortissez souplement avec le médio-pied."
+                  "Ne restez pas collé au sol ; cherchez un contact élastique et bref.",
+                  "Contrôlez les genoux pour éviter tout valgus à l'atterrissage."
             ]
       },
       {
             "id": 6,
             "moduleId": 2,
             "moduleTitle": "Module 2 : Pliométrie & Détente Verticale",
-            "title": "6. 5 Exercices de Pliométrie pour la Vitesse & la Détente",
-            "youtubeId": "eqxU-iAQfU0",
+            "title": "6. 3 Top Exercices pour Augmenter Accélération & Vitesse",
+            "youtubeId": "lPxh7RNObXc",
             "videoFile": "videos/video_6.mp4",
-            "poster": "https://i.ytimg.com/vi/eqxU-iAQfU0/hqdefault.jpg",
-            "duration": "6:28 min",
+            "poster": "https://i.ytimg.com/vi/lPxh7RNObXc/hqdefault.jpg",
+            "duration": "0:58 min",
             "level": "Intermédiaire",
             "series": "4 Séries",
-            "reps": "6 sauts continus",
-            "rest": "90 sec",
-            "goal": "Temps de Contact au Sol Réduit",
-            "desc": "Exercices de rebonds réactifs et d'impulsions unilatérales pour transformer vos jambes en véritables ressorts athlétiques.",
+            "reps": "5 reps/côté",
+            "rest": "75 sec",
+            "goal": "Vitesse de démarrage & Pliométrie",
+            "desc": "Exercices unilatéraux pour renforcer la force de propulsion de chaque jambe et gagner ce mètre d'avance décisif sur le premier pas.",
             "mistakes": [
-                  "Ne restez pas écrasé au sol entre les rebonds.",
-                  "Utilisez le balancier des bras pour vous propulser."
+                  "Ne sautez pas les jambes raides.",
+                  "Veillez à l'équilibre symétrique entre jambe droite et gauche."
             ]
       },
       {
             "id": 7,
             "moduleId": 2,
             "moduleTitle": "Module 2 : Pliométrie & Détente Verticale",
-            "title": "7. Top Exercices d'Explosivité pour Joueur de Football",
-            "youtubeId": "Bdd6msSxQYs",
+            "title": "7. 3 Exercices Simples pour Doubler ta Vitesse sur le Terrain",
+            "youtubeId": "dvkEyuiMHKA",
             "videoFile": "videos/video_7.mp4",
-            "poster": "https://i.ytimg.com/vi/Bdd6msSxQYs/hqdefault.jpg",
-            "duration": "2:06 min",
+            "poster": "https://i.ytimg.com/vi/dvkEyuiMHKA/hqdefault.jpg",
+            "duration": "0:50 min",
             "level": "Tous Niveaux",
             "series": "3 Séries",
-            "reps": "6 répétitions",
+            "reps": "8 reps",
             "rest": "60 sec",
-            "goal": "Accélération et Changements de Direction",
-            "desc": "Travail combiné de sauts horizontaux et verticaux pour maximiser le premier appui lors des prises de vitesse.",
+            "goal": "Impulsion & Foulée puissante",
+            "desc": "Mouvements explosifs ciblés pour transformer la force acquise en salle en vitesse de pointe et en changements de direction tranchants.",
             "mistakes": [
-                  "Contrôlez la réception avant d'enchaîner le saut suivant.",
-                  "Gardez les genoux alignés dans l'axe des orteils."
+                  "Ne précipitez pas les répétitions ; stabilisez-vous avant chaque saut.",
+                  "Gardez les orteils fléchis vers le haut (dorsiflexion)."
             ]
       },
       {
             "id": 8,
             "moduleId": 2,
             "moduleTitle": "Module 2 : Pliométrie & Détente Verticale",
-            "title": "8. Pliométrie et Explosivité Spécifique Gardien et Joueur de Champ",
-            "youtubeId": "Ir7eCpusir4",
+            "title": "8. Travail de Vitesse & Coordination Spécifique Football",
+            "youtubeId": "IM9pFn1tbJw",
             "videoFile": "videos/video_8.mp4",
-            "poster": "https://i.ytimg.com/vi/Ir7eCpusir4/hqdefault.jpg",
-            "duration": "10:51 min",
-            "level": "Tous Niveaux",
+            "poster": "https://i.ytimg.com/vi/IM9pFn1tbJw/hqdefault.jpg",
+            "duration": "0:48 min",
+            "level": "Avancé",
             "series": "4 Séries",
-            "reps": "6 impulsions explosives",
+            "reps": "6 reps",
             "rest": "90 sec",
-            "goal": "Plongeon, Détente et Réflexes",
-            "desc": "Pliométrie multidirectionnelle avec transferts rapides pour gagner en vivacité sur les arrêts, réceptions et démarrages.",
+            "goal": "Dynamisme & Coordination",
+            "desc": "Combinaison de vitesse neuromusculaire et de coordination motrice pour réagir instantanément aux transitions offensives et défensives.",
             "mistakes": [
-                  "Ne laissez pas les chevilles s'affaisser vers l'intérieur.",
-                  "Respirez profondément entre chaque série."
+                  "Ne travaillez pas en état de fatigue avancée.",
+                  "Respectez les temps de repos complets entre les séries."
             ]
       },
       {
             "id": 9,
             "moduleId": 3,
-            "moduleTitle": "Module 3 : Force Explosive & Vitesse de Démarrage",
-            "title": "9. Séance Complète d'Explosivité pour Footballeurs",
-            "youtubeId": "4MBrUTOylKE",
+            "moduleTitle": "Module 3 : Bas du Corps, Jambes & Vitesse de Démarrage",
+            "title": "9. Travaille tes Jambes – Séance Bas du Corps Footballeur",
+            "youtubeId": "Ow-0CBhMJ-Q",
             "videoFile": "videos/video_9.mp4",
-            "poster": "https://i.ytimg.com/vi/4MBrUTOylKE/hqdefault.jpg",
-            "duration": "7:30 min",
+            "poster": "https://i.ytimg.com/vi/Ow-0CBhMJ-Q/hqdefault.jpg",
+            "duration": "0:54 min",
             "level": "Tous Niveaux",
             "series": "4 Séries",
-            "reps": "5 - 6 reps lourdes/rapides",
-            "rest": "120 sec",
-            "goal": "Puissance Maximale en Salle",
-            "desc": "Enchaînement d'exercices polyarticulaires (trap bar, fentes sautées, hip thrust) pour développer la force motrice des jambes.",
+            "reps": "8 - 10 reps",
+            "rest": "90 sec",
+            "goal": "Puissance des cuisses & Ischios",
+            "desc": "Séance incontournable de renforcement des quadriceps, fessiers et ischios pour bâtir des jambes d'acier résistantes aux 90 minutes.",
             "mistakes": [
-                  "Ne chargez pas au détriment de la vitesse de la barre.",
-                  "Arrêtez la série dès que la vitesse diminue."
+                  "Ne laissez pas le genou s'effondrer vers l'intérieur.",
+                  "Gardez le buste droit et aligné."
             ]
       },
       {
             "id": 10,
             "moduleId": 3,
-            "moduleTitle": "Module 3 : Force Explosive & Vitesse de Démarrage",
-            "title": "10. Les 10 Meilleurs Exercices de Musculation pour Footballeurs",
-            "youtubeId": "I-2vsft_FhI",
+            "moduleTitle": "Module 3 : Bas du Corps, Jambes & Vitesse de Démarrage",
+            "title": "10. Séance Complète Bas du Corps en Salle pour Footballeurs",
+            "youtubeId": "g2cO7VJuKFA",
             "videoFile": "videos/video_10.mp4",
-            "poster": "https://i.ytimg.com/vi/I-2vsft_FhI/hqdefault.jpg",
-            "duration": "7:01 min",
-            "level": "Tous Niveaux",
+            "poster": "https://i.ytimg.com/vi/g2cO7VJuKFA/hqdefault.jpg",
+            "duration": "0:58 min",
+            "level": "Intermédiaire",
             "series": "4 Séries",
             "reps": "8 reps",
             "rest": "90 sec",
-            "goal": "Transfert Direct de la Salle au Terrain",
-            "desc": "La sélection d'exercices incontournables validés par la science du sport pour progresser en football sans blessure.",
+            "goal": "Renforcement unilatéral fessiers",
+            "desc": "Fentes bulgares, soulevés de terre roumains et travail fonctionnel pour éliminer tout déséquilibre de force entre vos deux jambes.",
             "mistakes": [
-                  "Ne copiez pas les programmes de pur bodybuilding.",
-                  "Privilégiez les mouvements fonctionnels debout."
+                  "Ne rebondissez pas brutalement au point le plus bas.",
+                  "Appuyez fermement sur tout le pied, du talon aux orteils."
             ]
       },
       {
             "id": 11,
             "moduleId": 3,
-            "moduleTitle": "Module 3 : Force Explosive & Vitesse de Démarrage",
-            "title": "11. Comment Développer son Explosivité Spécifique Football",
-            "youtubeId": "BThmW-APBVQ",
+            "moduleTitle": "Module 3 : Bas du Corps, Jambes & Vitesse de Démarrage",
+            "title": "11. Renforcement des Jambes & Puissance Athlétique",
+            "youtubeId": "qrTFmw085jI",
             "videoFile": "videos/video_11.mp4",
-            "poster": "https://i.ytimg.com/vi/BThmW-APBVQ/hqdefault.jpg",
-            "duration": "6:52 min",
-            "level": "Intermédiaire",
-            "series": "3 - 4 Séries",
-            "reps": "6 reps par jambe",
-            "rest": "90 sec",
-            "goal": "Recrutement des Fibres Rapides",
-            "desc": "Principes d'entraînement neuro-musculaire pour exploser sur les premiers mètres et devancer votre adversaire direct.",
+            "poster": "https://i.ytimg.com/vi/qrTFmw085jI/hqdefault.jpg",
+            "duration": "0:45 min",
+            "level": "Tous Niveaux",
+            "series": "3 Séries",
+            "reps": "10 reps",
+            "rest": "75 sec",
+            "goal": "Stabilité genoux & Chevilles",
+            "desc": "Renforcement musculaire ciblant les adducteurs et les stabilisateurs de cheville pour supporter les appuis lourds sur terrain gras.",
             "mistakes": [
-                  "Ne travaillez pas jusqu'à l'échec musculaire total.",
-                  "Accordez un temps de repos suffisant pour recharger le système nerveux."
+                  "Ne transférez pas tout le poids sur les pointes de pieds.",
+                  "Contrôlez la descente sur 2 à 3 secondes."
             ]
       },
       {
             "id": 12,
             "moduleId": 3,
-            "moduleTitle": "Module 3 : Force Explosive & Vitesse de Démarrage",
-            "title": "12. Améliorer sa Vitesse de 20% avec la Musculation Ciblée",
-            "youtubeId": "IQsdsbTkjwA",
+            "moduleTitle": "Module 3 : Bas du Corps, Jambes & Vitesse de Démarrage",
+            "title": "12. Exercices Clés pour Gagner en Vitesse & Force",
+            "youtubeId": "BpVcfXOw4ng",
             "videoFile": "videos/video_12.mp4",
-            "poster": "https://i.ytimg.com/vi/IQsdsbTkjwA/hqdefault.jpg",
-            "duration": "4:24 min",
-            "level": "Tous Niveaux",
-            "series": "3 Séries",
-            "reps": "8 répétitions dynamiques",
+            "poster": "https://i.ytimg.com/vi/BpVcfXOw4ng/hqdefault.jpg",
+            "duration": "0:50 min",
+            "level": "Avancé",
+            "series": "4 Séries",
+            "reps": "8 reps",
             "rest": "90 sec",
-            "goal": "Vitesse Maximale de Pointe",
-            "desc": "Exercices pour renforcer les ischios et les fessiers afin d'allonger la foulée et d'augmenter la fréquence de course.",
+            "goal": "Accélération & Récupération d'énergie",
+            "desc": "Exercices de chaîne postérieure pour activer puissamment les fessiers et développer une foulée de sprint d'élite.",
             "mistakes": [
-                  "Ne négligez pas l'échauffement dynamique des ischio-jambiers.",
-                  "Gardez le bassin neutre."
+                  "Ne cambrez pas excessivement en haut du mouvement.",
+                  "Contractez volontairement les fessiers en fin d'extension."
             ]
       },
       {
             "id": 13,
             "moduleId": 4,
-            "moduleTitle": "Module 4 : Bas du Corps, Gainage & Duels",
-            "title": "13. Séance Spécifique Bas du Corps Musculation Footballeur",
-            "youtubeId": "M57gQ903hvY",
+            "moduleTitle": "Module 4 : Gainage, Core & Puissance de Frappe",
+            "title": "13. Routine Abdos & Gainage en Salle pour Footballeur",
+            "youtubeId": "xHwLTrnFDms",
             "videoFile": "videos/video_13.mp4",
-            "poster": "https://i.ytimg.com/vi/M57gQ903hvY/hqdefault.jpg",
-            "duration": "11:19 min",
+            "poster": "https://i.ytimg.com/vi/xHwLTrnFDms/hqdefault.jpg",
+            "duration": "0:55 min",
             "level": "Tous Niveaux",
-            "series": "4 Séries",
-            "reps": "8 reps par jambe",
-            "rest": "90 sec",
-            "goal": "Force Unilatérale des Jambes",
-            "desc": "Fentes bulgares, soulevé de terre roumain unilatéral et travail des mollets pour équilibrer la force entre les deux jambes.",
+            "series": "3 Séries",
+            "reps": "12 reps",
+            "rest": "60 sec",
+            "goal": "Solidité du buste & Frappe lourde",
+            "desc": "Gainage dynamique et travail des obliques pour créer un bouclier abdominal garantissant la stabilité lors des tirs et des tacles.",
             "mistakes": [
-                  "Ne laissez pas le genou avant dépasser excessivement vers l'intérieur.",
-                  "Gardez le pied d'appui solidement ancré."
+                  "Ne bloquez pas votre respiration pendant le gainage.",
+                  "Ne laissez pas le bassin plonger vers le sol."
             ]
       },
       {
             "id": 14,
             "moduleId": 4,
-            "moduleTitle": "Module 4 : Bas du Corps, Gainage & Duels",
-            "title": "14. Entraînement en Salle de Musculation pour Footballeurs",
-            "youtubeId": "smq8sdnIz2g",
+            "moduleTitle": "Module 4 : Gainage, Core & Puissance de Frappe",
+            "title": "14. Corriger les Erreurs de Musculation pour Joueur de Foot",
+            "youtubeId": "URNJysQfDkw",
             "videoFile": "videos/video_14.mp4",
-            "poster": "https://i.ytimg.com/vi/smq8sdnIz2g/hqdefault.jpg",
-            "duration": "6:08 min",
-            "level": "Tous Niveaux",
-            "series": "4 Séries",
-            "reps": "8 - 10 reps",
-            "rest": "75 sec",
-            "goal": "Endurance de Force pour 90 Minutes",
-            "desc": "Planification d'une séance complète alliant renforcement des membres inférieurs et gainage dynamique pour tenir tout le match.",
+            "poster": "https://i.ytimg.com/vi/URNJysQfDkw/hqdefault.jpg",
+            "duration": "0:50 min",
+            "level": "Intermédiaire",
+            "series": "3 Séries",
+            "reps": "10 reps",
+            "rest": "60 sec",
+            "goal": "Technique irréprochable en salle",
+            "desc": "Conseils techniques pour éliminer les erreurs courantes en salle qui freinent votre vitesse et augmentent les risques de blessures articulaires.",
             "mistakes": [
-                  "Ne chargez pas trop lourd en veille de match.",
-                  "Hydratez-vous régulièrement pendant la séance."
+                  "Ne cherchez pas à copier des routines de bodybuilders.",
+                  "Privilégiez toujours la vitesse et l'amplitude athlétique."
             ]
       },
       {
             "id": 15,
             "moduleId": 4,
-            "moduleTitle": "Module 4 : Bas du Corps, Gainage & Duels",
-            "title": "15. Force et Vitesse : Développe des Jambes d'Athlète",
-            "youtubeId": "OOjM2rIKb9A",
+            "moduleTitle": "Module 4 : Gainage, Core & Puissance de Frappe",
+            "title": "15. Condition Physique & Résistance Haute Intensité",
+            "youtubeId": "0Hv8P_Wsvfc",
             "videoFile": "videos/video_15.mp4",
-            "poster": "https://i.ytimg.com/vi/OOjM2rIKb9A/hqdefault.jpg",
-            "duration": "5:01 min",
+            "poster": "https://i.ytimg.com/vi/0Hv8P_Wsvfc/hqdefault.jpg",
+            "duration": "0:52 min",
             "level": "Tous Niveaux",
-            "series": "3 Séries",
+            "series": "4 Séries",
             "reps": "10 reps",
-            "rest": "60 sec",
-            "goal": "Puissance sans Matériel Lourd",
-            "desc": "Exercices au poids du corps et avec résistance élastique pour renforcer les quadriceps, adducteurs et mollets n'importe où.",
+            "rest": "75 sec",
+            "goal": "Répétition d'efforts violents 90 min",
+            "desc": "Circuit de conditionnement physique haute intensité en salle pour répéter les courses à haute vitesse de la 1ère à la 90e minute sans faiblir.",
             "mistakes": [
-                  "Contrôlez chaque descente sur 2 à 3 secondes.",
-                  "Explosez franchement sur la montée."
+                  "Ne sacrifiez jamais la technique pour aller plus vite.",
+                  "Gérez votre rythme pour tenir l'ensemble des séries."
             ]
       },
       {
             "id": 16,
             "moduleId": 4,
-            "moduleTitle": "Module 4 : Bas du Corps, Gainage & Duels",
-            "title": "16. Explosivité et Renforcement au Poids du Corps",
-            "youtubeId": "VRa42NLvauc",
+            "moduleTitle": "Module 4 : Gainage, Core & Puissance de Frappe",
+            "title": "16. Pourquoi les Pros font du Travail Physique en Salle",
+            "youtubeId": "t_26cljtHTU",
             "videoFile": "videos/video_16.mp4",
-            "poster": "https://i.ytimg.com/vi/VRa42NLvauc/hqdefault.jpg",
-            "duration": "7:00 min",
-            "level": "Tous Niveaux",
-            "series": "4 Séries",
-            "reps": "8 - 10 répétitions",
-            "rest": "75 sec",
-            "goal": "Stabilité du Tronc et Coordination",
-            "desc": "Travail du core, de la sangle abdominale et des fessiers pour transmettre la force du bas vers le haut du corps.",
+            "poster": "https://i.ytimg.com/vi/t_26cljtHTU/hqdefault.jpg",
+            "duration": "0:48 min",
+            "level": "Intermédiaire",
+            "series": "3 Séries",
+            "reps": "10 reps",
+            "rest": "60 sec",
+            "goal": "Discipline & Développement athlétique",
+            "desc": "Analyse des exigences athlétiques des clubs d'élite et de la manière dont la musculation programmée transforme le rendement en match.",
             "mistakes": [
-                  "Ne creusez pas le bas du dos sur les planches.",
-                  "Contractez volontairement les abdominaux."
+                  "Ne sous-estimez pas le repos entre les matchs.",
+                  "Ajustez le volume selon le calendrier de compétition."
             ]
       },
       {
             "id": 17,
             "moduleId": 5,
-            "moduleTitle": "Module 5 : Prévention des Blessures, Récupération & Performance",
-            "title": "17. Séance Explosivité Haut du Corps & Gainage Athlétique",
-            "youtubeId": "hcLHg-1g-30",
+            "moduleTitle": "Module 5 : Mobilité, Prévention des Blessures & Récupération",
+            "title": "17. Mobilité d'Avant-Match & Prévention des Blessures",
+            "youtubeId": "XUjSTLiyMNU",
             "videoFile": "videos/video_17.mp4",
-            "poster": "https://i.ytimg.com/vi/hcLHg-1g-30/hqdefault.jpg",
-            "duration": "10:36 min",
-            "level": "Intermédiaire",
-            "series": "4 Séries",
-            "reps": "8 reps",
-            "rest": "90 sec",
-            "goal": "Anti-Rotation et Robustesse du Torse",
-            "desc": "Gainage Pallof press, rotation avec poulie et pompes explosives pour résister aux tirages de maillot et aux charges d'épaule.",
+            "poster": "https://i.ytimg.com/vi/XUjSTLiyMNU/hqdefault.jpg",
+            "duration": "0:58 min",
+            "level": "Tous Niveaux",
+            "series": "3 Séries",
+            "reps": "10 reps/côté",
+            "rest": "45 sec",
+            "goal": "Mobilité des hanches & Adducteurs",
+            "desc": "Routine de mobilité active pré-entraînement pour déverrouiller le bassin, libérer l'amplitude de foulée et immuniser les adducteurs.",
             "mistakes": [
-                  "Ne tournez pas le bassin lors des exercices anti-rotation.",
-                  "Gardez les épaules basses et relâchées."
+                  "Ne forcez jamais un étirement jusqu'à la douleur vive.",
+                  "Respirez profondément et relâchez les tensions parasites."
             ]
       },
       {
             "id": 18,
             "moduleId": 5,
-            "moduleTitle": "Module 5 : Prévention des Blessures, Récupération & Performance",
-            "title": "18. Travailler la Vitesse et l'Athlétisme avec Préparateur Pro",
-            "youtubeId": "GdzjUxObbPo",
+            "moduleTitle": "Module 5 : Mobilité, Prévention des Blessures & Récupération",
+            "title": "18. La Préparation Physique & Récupération de Haut Niveau",
+            "youtubeId": "ieSVlyStDVA",
             "videoFile": "videos/video_18.mp4",
-            "poster": "https://i.ytimg.com/vi/GdzjUxObbPo/hqdefault.jpg",
-            "duration": "6:10 min",
-            "level": "Tous Niveaux",
-            "series": "Guide Complet",
-            "reps": "Conseils Techniques",
+            "poster": "https://i.ytimg.com/vi/ieSVlyStDVA/hqdefault.jpg",
+            "duration": "0:50 min",
+            "level": "Intermédiaire",
+            "series": "3 Séries",
+            "reps": "8 reps",
             "rest": "60 sec",
-            "goal": "Méthodologie Professionnelle de Vitesse",
-            "desc": "Conseils exclusifs de Nicolas Dyon, préparateur physique pro en Ligue 1, sur la gestion de l'effort et la vitesse en football.",
+            "goal": "Récupération active & Longévité",
+            "desc": "Protocoles de décharge musculaire et d'étirements dynamiques pour accélérer la régénération musculaire entre deux rencontres disputées.",
             "mistakes": [
-                  "Ne courez pas crispé ou avec les épaules rentrées.",
-                  "Soignez la qualité du sommeil pour bien récupérer."
+                  "Ne négligez pas l'hydratation et le sommeil post-séance.",
+                  "Adoptez une régularité hebdomadaire inébranlable."
             ]
       },
       {
             "id": 19,
             "moduleId": 5,
-            "moduleTitle": "Module 5 : Prévention des Blessures, Récupération & Performance",
-            "title": "19. Éviter les Blessures et Erreurs en Salle pour Footballeur",
-            "youtubeId": "JJW-7a-vzvg",
+            "moduleTitle": "Module 5 : Mobilité, Prévention des Blessures & Récupération",
+            "title": "19. Entraînement de Renforcement & Préservation Articulaire",
+            "youtubeId": "t2j-PGWJzqM",
             "videoFile": "videos/video_19.mp4",
-            "poster": "https://i.ytimg.com/vi/JJW-7a-vzvg/hqdefault.jpg",
-            "duration": "5:15 min",
+            "poster": "https://i.ytimg.com/vi/t2j-PGWJzqM/hqdefault.jpg",
+            "duration": "0:45 min",
             "level": "Tous Niveaux",
-            "series": "Guide Clé",
-            "reps": "Conseils Pratiques",
-            "rest": "90 sec",
-            "goal": "Blindage Ischios, Pubalgie et Genoux",
-            "desc": "Les erreurs classiques à la salle qui causent des blessures ou alourdissent le footballeur, et comment les corriger facilement.",
+            "series": "3 Séries",
+            "reps": "10 reps",
+            "rest": "60 sec",
+            "goal": "Protection des tendons & Ligaments",
+            "desc": "Renforcement isométrique et excentrique des genoux et chevilles pour prémunir les ligaments croisés contre les torsions.",
             "mistakes": [
-                  "Ne travaillez pas uniquement les quadriceps au détriment des ischios.",
-                  "N'oubliez jamais les étirements et le rouleau de massage."
+                  "Ne sautez pas les séances préventives même sans douleur.",
+                  "L'assiduité est la clé de la durabilité sportive."
             ]
       },
       {
             "id": 20,
             "moduleId": 5,
-            "moduleTitle": "Module 5 : Prévention des Blessures, Récupération & Performance",
-            "title": "20. Entraînement Explosivité et Transfert Technique sur le Terrain",
-            "youtubeId": "4oG2dZUwbRs",
+            "moduleTitle": "Module 5 : Mobilité, Prévention des Blessures & Récupération",
+            "title": "20. Séance de Préparation Physique Intense & Régularité",
+            "youtubeId": "sEVVo_HFzv0",
             "videoFile": "videos/video_20.mp4",
-            "poster": "https://i.ytimg.com/vi/4oG2dZUwbRs/hqdefault.jpg",
-            "duration": "6:23 min",
-            "level": "Tous Niveaux",
+            "poster": "https://i.ytimg.com/vi/sEVVo_HFzv0/hqdefault.jpg",
+            "duration": "0:52 min",
+            "level": "Avancé",
             "series": "4 Séries",
-            "reps": "Complexe Vitesse",
-            "rest": "90 sec",
-            "goal": "Transfert Salle vers Ballon",
-            "desc": "Comment faire le lien parfait entre les gains de force obtenus en salle de musculation et votre aisance balle au pied en match.",
+            "reps": "8 reps",
+            "rest": "75 sec",
+            "goal": "Rigueur et transfert sur le terrain",
+            "desc": "Exemple d'éthique de travail et d'intensité pro à intégrer dans votre routine pour maintenir un niveau physique d'exception toute l'année.",
             "mistakes": [
-                  "Ne négligez jamais le travail technique avec ballon.",
-                  "Maintenez la fraîcheur physique pour vos séances club."
+                  "Ne surchargez pas la veille d'un match officiel.",
+                  "Maintenez une technique propre sur chaque répétition."
             ]
       }
 ];
@@ -1325,26 +1339,27 @@
       const lesson = courseData.find(l => l.id === id);
       if (!lesson) return;
 
-      // Asegurar vista de videos activa
+      // Ensure videos view active
       if (document.getElementById('view-videos').classList.contains('hidden')) {
         switchMainView('videos');
       }
 
-      // Actualizar Video Frame (YouTube Embed 100% Operativo)
+      // Update Video Frame (YouTube Shorts Embed with cross-origin referrer)
       const frame = document.getElementById('video-frame');
       if (frame && lesson.youtubeId) {
-        frame.src = "https://www.youtube-nocookie.com/embed/" + lesson.youtubeId + "?autoplay=1&playsinline=1&rel=0&modestbranding=1";
+        frame.src = "https://www.youtube.com/embed/" + lesson.youtubeId + "?autoplay=1&playsinline=1&rel=0&modestbranding=1";
+        frame.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
       }
       const ytLink = document.getElementById('btn-youtube-link');
       if (ytLink && lesson.youtubeId) {
-        ytLink.href = "https://www.youtube.com/watch?v=" + lesson.youtubeId;
+        ytLink.href = "https://www.youtube.com/shorts/" + lesson.youtubeId;
       }
 
-      // Actualizar Textos
+      // Update Texts
       document.getElementById('badge-module').innerText = lesson.moduleTitle.toUpperCase();
       document.getElementById('lesson-title').innerText = lesson.title;
 
-      // Actualizar Ficha Técnica
+      // Update Specs
       document.getElementById('tech-series').innerText = lesson.series;
       document.getElementById('tech-reps').innerText = lesson.reps;
       document.getElementById('tech-rest').innerText = lesson.rest;
@@ -1488,27 +1503,27 @@
 
     // SISTEMA OFICIAL DE DESCARGAS DE PDF
     function downloadPDF(itemKey, customName) {
-      let pdfUrl = 'pdfs/162-entrainements-musculation-football.pdf';
-      let downloadName = 'Livre-Maitre-162-Entrainements-Futforce.pdf';
+      let pdfUrl = 'pdfs/162-fiches-musculation-football.pdf';
+      let downloadName = 'Livre-Maitre-162-Fiches-Football.pdf';
       let displayName = '+162 Fiches Musculation & Fonctionnelles';
 
       const key = (itemKey || '').toLowerCase();
-      if (key.includes('bonus 1') || key.includes('bonus #1') || key.includes('mobil') || key.includes('movilidad')) {
+      if (key.includes('bonus 1') || key.includes('bonus #1') || key.includes('mobilit') || key.includes('movilidad')) {
         pdfUrl = 'pdfs/bonus1-mobilite-pour-footballeurs.pdf';
         downloadName = 'Bonus-1-Mobilite-Footballeur.pdf';
         displayName = 'Bonus #1 : Mobilité pour Footballeurs';
-      } else if (key.includes('bonus 2') || key.includes('bonus #2') || key.includes('nutri')) {
-        pdfUrl = 'pdfs/bonus2-nutrition-sportive.pdf';
-        downloadName = 'Bonus-2-Nutrition-Sportive-Football.pdf';
+      } else if (key.includes('bonus 2') || key.includes('bonus #2') || key.includes('nutrition') || key.includes('nutrici')) {
+        pdfUrl = 'pdfs/bonus2-nutrition-sportive-footballeur.pdf';
+        downloadName = 'Bonus-2-Nutrition-Sportive.pdf';
         displayName = 'Bonus #2 : Nutrition Sportive';
-      } else if (key.includes('bonus 3') || key.includes('bonus #3') || key.includes('blessur') || key.includes('lesion')) {
+      } else if (key.includes('bonus 3') || key.includes('bonus #3') || key.includes('blessure') || key.includes('prevention')) {
         pdfUrl = 'pdfs/bonus3-protocole-anti-blessures.pdf';
         downloadName = 'Bonus-3-Protocole-Anti-Blessures.pdf';
         displayName = 'Bonus #3 : Protocole Anti-Blessures';
-      } else if (key.includes('bonus 4') || key.includes('bonus #4') || key.includes('supplem') || key.includes('complem')) {
-        pdfUrl = 'pdfs/bonus4-guide-complements.pdf';
-        downloadName = 'Bonus-4-Guide-Complements-Alimentaires.pdf';
-        displayName = 'Bonus #4 : Guide des Compléments';
+      } else if (key.includes('bonus 4') || key.includes('bonus #4') || key.includes('suppl') || key.includes('suplementaci')) {
+        pdfUrl = 'pdfs/bonus4-guide-supplementation.pdf';
+        downloadName = 'Bonus-4-Guide-Supplementation.pdf';
+        displayName = 'Bonus #4 : Guide Supplémentation';
       } else if (key.includes('bloc 1') || key.includes('bloque 1')) {
         displayName = 'Bloc 1 : Force Explosive';
       } else if (key.includes('bloc 2') || key.includes('bloque 2')) {
@@ -1519,8 +1534,8 @@
         displayName = 'Bloc 4 : Puissance';
       } else if (key.includes('bloc 5') || key.includes('bloque 5')) {
         displayName = 'Bloc 5 : Gainage & Prévention';
-      } else if (key.includes('fiche') || key.includes('suivi') || key.includes('plantilla')) {
-        displayName = 'Fiche de Suivi & Progression RPE';
+      } else if (key.includes('suivi') || key.includes('rpe') || key.includes('plantilla')) {
+        displayName = 'Fiche de Suivi RPE';
       }
 
       if (customName) downloadName = customName;
